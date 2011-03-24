@@ -1,5 +1,6 @@
 This script is aiming to minimize the issues developers face, when they develop on windows and deploy to linux 
-using cruise and bundler in their rails application. (detail issue and description : http://gouravtiwari.blogspot.com/2011/03/development-on-windows-deploying-to.html)
+using cruise and bundler in their rails application. 
+(detail issue and description : http://gouravtiwari.blogspot.com/2011/03/development-on-windows-deploying-to.html)
 I have created a rake task to call this script before the deployment happen on cruise box 
 (fix.rake file: 'cruise:init' rake task)
 
