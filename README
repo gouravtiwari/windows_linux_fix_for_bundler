@@ -1,0 +1,11 @@
+This script is aiming to minimize the issues developers face, when they develop on windows and deploy to linux using cruise and bundler in their rails application. I have created a rake task to call this script before the deployment happen on cruise box (fix.rake file: 'cruise:init' rake task).
+
+The script does following jobs:
+* remove windows traces
+* update the platform details
+* run 'bundle install' or 'bundle' command 
+* commit the latest Gemfile and Gemgfile.lock to subversion repository
+
+If you are using git or cvs, you just need to replace the svn ci command.
+
+You might also either need to replace the cruise:init task you already have or you can use this fix.rake file.
